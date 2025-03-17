@@ -59,14 +59,14 @@ accordionItems.forEach(item => {
                 otherContent.classList.add('hidden');
                 otherIcon.classList.remove('rotate-180');
                 otherHeader.setAttribute('aria-expanded', 'false');
-                otherHeader.classList.remove('bg-gray-200', 'text-black'); // Reset color
+                otherHeader.classList.remove('bg-[#055a3e]', 'text-black'); // Reset color
             }
         });
 
         content.classList.toggle('hidden');
         icon.classList.toggle('rotate-180');
         header.setAttribute('aria-expanded', !isExpanded);
-        header.classList.toggle('bg-gray-200', !isExpanded); // Change background when active
+        header.classList.toggle('bg-[#055a3e]', !isExpanded); // Change background when active
         header.classList.toggle('text-black', !isExpanded); // Change text color when active
     });
 });
